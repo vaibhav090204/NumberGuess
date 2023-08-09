@@ -72,7 +72,7 @@ button {
 @media (max-width: 500px) {
     .container {
         width: 90%;
-        margin-top:20px ;
+        margin-top:10px ;
     }
 
     #resultText {
