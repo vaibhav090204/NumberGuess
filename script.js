@@ -14,8 +14,8 @@ guessButton.addEventListener('click', function () {
     const userGuess = parseInt(guessInput.value);
 
     if (userGuess === randomValue) {
-        resultTex.textContent = `Congratulations! 🎉 You're a mastermind! The hidden number was ${randomValue}. 
-        Your skillful score: ${200 - attempts * 2}`;
+        resultTex.innerHTML = `Congratulations! 🎉 You're a mastermind! The hidden number was ${randomValue}.`;
+        resultText.innerHTML = `Your skillful score: <span style="color: green">${200 - attempts * 2}</span>`;
         guessButton.disabled = true;
     } else if (userGuess > randomValue) {
         resultText.textContent = 'Your guess is too high. Try again.';
